@@ -1,4 +1,4 @@
-.container{
+.form-wrapper{
     height: 100vh;
     display: flex;
     align-items: center;
@@ -69,7 +69,115 @@
                 }
             } 
 
-
         }
     }
 }
+
+.home{
+  // max-width: 1700px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a7bcff;
+
+  .container{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .sidebar{
+      flex:1.2;
+      background-color: #5d5b8d;
+  
+      .navbar{
+        background-color: #383761;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        height: 50px;
+        color: #ffff;
+
+        .logo{
+          font-weight: bold;
+        }
+        .user-info{
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          img{
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          button{
+            font-size:10px;
+            background-color: #5d5b8d;
+            border: none;
+            outline: none;
+            padding: 5px;
+            cursor: pointer;
+            color: #ddddf7;
+          }
+        }
+      }
+
+      .searchbar{
+        input{
+          border: none;
+          outline: none;
+          border-bottom: 1px solid #383761;
+          background-color: transparent;
+          padding: 10px;
+          width: 100%;
+          color: #fff;
+
+          &::placeholder{
+            color: lightgray;
+          }
+        } 
+      }
+
+      .chats{
+        padding: 10px;
+        border-bottom: 1px solid #383761;
+        color: #fff;
+
+        &:hover{
+          background-color: #383761;
+          cursor: pointer;
+        }
+        .userChat{
+          display: flex;
+          align-items: center;
+          gap: 10px;
+            p{
+              margin: 0;
+              font-size: 10px;
+            }
+          img{
+            width: 40px;
+            height: 40px;
+            border-radius:50% ;
+            object-fit: cover;
+          }
+        }
+      }
+
+
+    }
+
+
+    .chat{
+      flex: 2;
+      background-color: #ddd;
+    }
+  }
+}
+

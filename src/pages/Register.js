@@ -3,10 +3,9 @@ import Add from '../images/97147833-icône-de-l-utilisateur-avec-le-signe-de-l-i
 import { Link } from 'react-router-dom'
 const Register = () => {
   return (
-    <div className='container'>
+    <div className='form-wrapper'>
         <div className="form-container">
-          <span className='logo'>Lama Chat</span>
-          <span className='title' style={{marginTop: "5px"}}>Register</span>
+          <span className='logo'>Register</span>
             <form autoComplete='on'>
                 <input type="text" placeholder='Name'/>
                 <input type="text" placeholder='Email'/>
